@@ -8,4 +8,6 @@ urlpatterns = [
     path('menu/', views.MenuItemsView.as_view(), name='menu-items'),
     path('menu/item/<int:pk>/', views.SingleMenuItemView.as_view(), name='single-menu-item'),
     path('api-token-auth/', obtain_auth_token),
+    path('api/menu-items/', views.MenuItemsView.as_view(), name='api-menu-items'),
+    path('api/menu-items/<int:pk>/', views.SingleMenuItemView.as_view(), name='api-single-menu-item'),
 ]
